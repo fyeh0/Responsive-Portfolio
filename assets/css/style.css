@@ -1,0 +1,183 @@
+body {
+    background-image: url("../images/ep_naturalwhite.png");
+}
+
+.header {
+    top: 0px;
+    margin: 0px;
+    color: white;
+    background: white;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.navbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    top: 0;
+    height: 76px;
+}
+
+.links {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    float: right;
+    margin-top: -65px;
+    text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.container {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    clear: both;
+    display: block;
+    width: 960px;
+    box-sizing: border-box;
+    padding: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+    background: #ffffff;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2.5px solid #dddddd;
+}
+
+.footer {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    bottom: 0px;
+    border-top: 8px solid #4aaaa5;
+    padding: 18px;
+    background-attachment: scroll;
+    background: #666666;
+    color: #dddddd;
+    left: 0px;
+}
+
+#image {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 18px;
+}
+
+#name, #email {
+    width: 904px;
+    height: 40px;
+    text-indent: 8px;
+}
+
+#message {
+    width: 904px;
+    height: 350px;
+}
+
+#button {
+    height: 45px;
+    width: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #4aaaa5;
+    color: #ffffff;
+    border-style: none
+}
+
+@media screen and (max-width: 980px) {
+    .container {
+        box-sizing: border-box;
+        max-width: 65%;
+        margin-left: 40px;
+        margin-top: 120px;
+    }
+    #image {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin-right: 25px;
+    }
+    #img1, #img2, #img3, #img4, #img5 {
+        margin: 0px 0px 10px 0px;
+        padding: 13px;
+        width: 45%;
+    }
+    #name, #email {
+        max-width: 100%;
+        height: auto;
+    }
+    #message {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        margin-left: 15px;
+    }
+    .links {
+        margin-right: 230px;
+    }
+    .container {
+        box-sizing: border-box;
+        max-width: 96%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .navbar {
+        display: static;
+        margin: 0px;
+    }
+    
+    h1 {
+        width: 100%;
+        position: absolute;
+    }
+
+    .links {
+        float: left;
+        width: 70%;
+        text-align: center;
+        padding-top: 150px;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        margin-top: 135px;
+    }
+    
+    #img1, #img2, #img3, #img4, #img5 {
+        width: 95%;
+    }
+
+    .footer {
+        position: initial;
+    }
+}
